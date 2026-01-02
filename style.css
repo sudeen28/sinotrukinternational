@@ -52,7 +52,13 @@
   gap: 20px;
   justify-items: center;
 }
-
+.hero-sectioncard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
 .bg {
     height: 100vh;
     
@@ -160,6 +166,18 @@
 }
 @media (max-width:991px)
 {
+    .hero-section
+    /* 100vh */{
+    margin-top: 50px;}
+    .hero-sectioncard
+    /* 100vh */{
+
+        /* width: 50%; */
+        /* display: flex; */
+        /* flex-direction: row; */
+    }
+
+
   .site-footer [class^=col-]
   {
     margin-bottom:30px
